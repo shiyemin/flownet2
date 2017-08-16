@@ -1,2 +1,7 @@
 python/caffe/_caffe.so
 *.pyc
+*.pyc
+models
+build
+.build_release
+python/caffe/proto/caffe_pb2.py
