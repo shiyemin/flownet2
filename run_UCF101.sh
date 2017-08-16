@@ -1,8 +1,8 @@
 #!/bin/sh
-MODEL=/home/shiyemin/code/flownet2/models/FlowNet2/FlowNet2_weights.caffemodel.h5
-PROTO=/home/shiyemin/code/flownet2/models/FlowNet2/FlowNet2_deploy.prototxt.template
-INPUT=/home/shiyemin/data/ucf101/Videos
-OUTPUT=/home/shiyemin/data/ucf101/frames_net
+MODEL=$HOME/code/flownet2/models/FlowNet2/FlowNet2_weights.caffemodel.h5
+PROTO=$HOME/code/flownet2/models/FlowNet2/FlowNet2_deploy.prototxt.template
+INPUT=$HOME/data/ucf101/Videos
+OUTPUT=$HOME/data/ucf101/frames_net
 
 trap 'echo you hit Ctrl-C/Ctrl-\, now exiting..; pkill -P $$; exit' SIGINT SIGQUIT
 
